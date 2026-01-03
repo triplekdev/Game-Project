@@ -221,4 +221,14 @@ hr {
     left: -17px;
 }
 
-
+footer {
+    position: fixed;
+    bottom: 0px;
+    background: var(--dark);
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-transform: none;
+    font-size: small;
+    z-index: 11;
+}
