@@ -84,6 +84,7 @@ h1 {
 
 .slot {
     flex: 1;
+    width: 40%;
     padding: 20px;
     background: rgba(0, 0, 0, 0.4);
     border-bottom: 2px solid var(--cyan);
