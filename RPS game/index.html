@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPS Game</title>
+    <link rel="stylesheet" href="rps.css">
+</head>
+
+<body>
+    <div class="game-container">
+        <header>
+            <h1>CHOOSE YOUR <span class="highlight">WEAPON</span></h1>
+        </header>
+        
+        <div class="weapon-selection">
+            <button class="weapon-card" id="rock" onclick="choice(this)">
+                <div class="icon-circle">🪨</div>
+                <p>ROCK</p>
+            </button>
+            <button class="weapon-card" onclick="choice(this)" id="paper">
+                <div class="icon-circle">📄</div>
+                <p>PAPER</p>
+            </button>
+            <button class="weapon-card" id="scissors" onclick="choice(this)">
+                <div class="icon-circle">✂️</div>
+                <p>SCISSORS</p>
+            </button>
+        </div>
+        
+        <div class="battle-arena">
+            <div class="slot player">
+                <small>PLAYER</small>
+                <div class="display" id="player-choice">Pick One</div>
+            </div>
+            
+            <div class="timer">0:03</div>
+            
+            <div class="slot computer">
+                <small>COMPUTER</small>
+                <div class="display" id="computer-choice">???</div>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <button id="play" class="btn btn-primary">PLAY</button>
+            <button class="btn" onclick="displayRules()">RULES</button>
+            
+        </div>
+    </div>
+    <div id="rules">
+        <hr />
+        <div class="contain">
+            <h2>RULES</h2>
+            <div class="list">
+                <ul>
+                    <li class="main-list">Select your Weapon</li>
+                    <li class="main-list">If your choice is rock:
+                        <ul class="small">
+                            <li>You Win if Computer picks Scissors </li>
+                            <li>You Lose if Computer picks Paper</li>
+                            <li>You Tie if Computer picks Rock</li>
+                        </ul>
+                    </li>
+                    <li class="main-list">If your choice is paper:
+                        <ul class="small">
+                            <li>You Win if Computer picks Rock </li>
+                            <li>You Lose if Computer picks Scissors</li>
+                            <li>You Tie if Computer picks Paper</li>
+                        </ul>
+                    </li>
+                    <li class="main-list">If your choice is scissors:
+                     <ul class="small">
+                    <li>You Win if Computer picks Paper </li>
+                    <li>You Lose if Computer picks Rock</li>
+                    <li>You Tie if Computer picks Scissors</li>
+                </ul></li>
+                </ul>
+            </div>
+        </div>
+        <button class="close" onclick="closeRules()">CLOSE</button>
+    </div>
+    <script src="rps.js" type="text/javascript" charset="utf-8"></script>
+</body>
+
+</html>
