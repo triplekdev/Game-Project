@@ -24,7 +24,7 @@ body {
     background: var(--glass);
     border: 1px solid rgba(0, 210, 255, 0.3);
     border-radius: 20px;
-    padding: 40px;
+    padding: 20px 30px;
     backdrop-filter: blur(10px);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     text-align: center;
@@ -84,7 +84,7 @@ h1 {
 
 .slot {
     flex: 1;
-    width: 40%;
+    width: 45%;
     padding: 20px;
     background: rgba(0, 0, 0, 0.4);
     border-bottom: 2px solid var(--cyan);
@@ -201,7 +201,7 @@ hr {
 
 .list ul{
     text-align: left;
-    font-size: max(1.5rem, 2.5vw);
+    font-size: max(1.3rem, 2.5vw);
 }
 
 .main-list {

@@ -99,7 +99,7 @@ function checkWinner(player, computer) {
 
 function updateStatus(result) {
     if (result === 'WIN') {
-        titleElement.innerHTML = `<span style="color:var(--cyan); text-shadow:0 0 15px var(--cyan)">YOU WIN!</span>`;
+        titleElement.innerHTML = `<span style="color:var(--cyan); text-shadow:0 0 15px var(--cyan); padding-top:30px">YOU WIN!</span>`;
     } else if (result === 'LOSE') {
         titleElement.innerHTML = `<span style="color:var(--orange); text-shadow:0 0 15px var(--orange)">SYSTEM WINS</span>`;
     } else {
