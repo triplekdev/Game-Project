@@ -105,9 +105,4 @@ function updateStatus(result) {
     } else {
         titleElement.innerHTML = `<span>STANDSTILL (DRAW)</span>`;
     }
-
-    setTimeout(() => {
-        playerDisplay.style.boxShadow = "none";
-        computerDisplay.style.boxShadow = "none";
-    }, 2000);
 }
