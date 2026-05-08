@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+  margin: auto;
+}
+body {
+ background-image: linear-gradient(#63636B, #128327);
+}
+table,
+th,
+tr,
+td {
+  border: 2px solid black;
+  border-collapse: collapse;
+  text-align: center;
+  padding: 20px;
+}
+th {
+  font-size: 1.2em;
+  font-weight: 1000;
+}
+td {
+ font-size: 18px;
+ font-weight: 500;
+}
+caption {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 2em;
+  font-weight: 1000;
+}
+#sp {
+  text-align: left;
+  font-size: 14px;
+}
+#ca {
+  font-weight: 1000;
+}
